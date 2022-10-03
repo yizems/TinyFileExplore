@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+file-explore:
+  open: true
+  dirs:
+    - name: root
+      path: /
+

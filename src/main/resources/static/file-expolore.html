@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FileExplore</title>
+    <style>
+        .table {
+            width: 100%;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+<span>
+    当前路径：<font style="color:green">{CURRENT_DIR}</font>
+</span>
+
+<table class="table">
+
+    <thead>
+    <tr>
+        <td>文件名</td>
+        <td>文件大小</td>
+        <td>文件类型</td>
+        <td>文件路径</td>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    <tr>
+        <td colspan="4"><font color="blue"><a href="{PARENT_DIR}">返回上一级</a> </font></td>
+    </tr>
+
+    {FILES_REPLACE}
+
+    <!--    <tr>-->
+    <!--        <td><font color="blue"><a href="">APKKiller.bpl</a> </font></td>-->
+    <!--        <td>100KB</td>-->
+    <!--        <td>bpl</td>-->
+    <!--        <td>&#45;&#45;</td>-->
+    <!--    </tr>-->
+    </tbody>
+</table>
+</body>
+</html>
